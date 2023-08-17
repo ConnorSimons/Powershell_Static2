@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-    <StaticImage
+    <img
       alt="Gatsby logo"
       height={20}
       style={{ margin: 0 }}
