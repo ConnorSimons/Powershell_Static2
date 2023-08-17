@@ -6,115 +6,67 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
+    <header>
+      <h1>My PowerShell Learning Journey</h1>
+    </header>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hello, I am Connor Simons. When I'm not diving into the world of PowerShell, you'll often find me immersed in the world of games, both on-screen and with my trusty RC cars. I also have a deep appreciation for the great outdoors, and you can often catch me exploring the breathtaking landscapes of the Pacific Northwest through hiking.
       </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
+    </section>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        Welcome to my PowerShell learning journey! In this blog, I'll share my experiences and insights as I delve into the world of PowerShell scripting.
+      </p>
+      <p>
+        We'll cover key topics including:
+      </p>
+      <ul>
+        <li>
+          <strong>PowerShell Help System:</strong> Mastering the built-in help system to quickly access documentation and learn about cmdlets and their usage.
         </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+        <li>
+          <strong>Functions:</strong> Creating and utilizing functions to modularize your code, enhance reusability, and streamline your PowerShell scripts.
+        </li>
+        <li>
+          <strong>PowerShell Remoting:</strong> Harnessing the power of remoting to manage and control remote machines, execute commands, and retrieve information.
+        </li>
+      </ul>
+      <p>
+        Whether you're a beginner or an experienced IT professional, this blog will guide you through essential PowerShell concepts and techniques. Let's dive in and discover the capabilities of PowerShell together!
+      </p>
+    </section>
+    <section id="help-system">
+      <h2>Exploring the Help System</h2>
+      <p>
+        One of the essential aspects of PowerShell is its extensive help system,
+        which provides detailed information about commands and concepts.
+        Let's dive into some basics of using the help system.
+      </p>
+      {/* Rest of the Help System content */}
+    </section>
+    <section id="functions">
+      <h2>Mastering Functions</h2>
+      <p>
+        Functions are like mini-programs within PowerShell that allow you to create reusable blocks of code.
+        They're like building blocks that you can use over and over again in your scripts.
+        Let's explore how functions work by looking at their structure and how you can use them.
+      </p>
+      {/* Rest of the Functions content */}
+    </section>
+    <section id="powershell-remoting">
+      <h2>PowerShell Remoting</h2>
+      <p>
+        PowerShell Remoting is a powerful feature that allows you to execute commands on remote computers.
+        It's like having the ability to control other machines from the comfort of your own computer.
+        Let's explore how PowerShell Remoting works and how you can use it.
+      </p>
+      {/* Rest of the PowerShell Remoting content */}
+    </section>
   </Layout>
 )
 
