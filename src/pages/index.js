@@ -98,17 +98,11 @@ const IndexPage = () => (
     Through this project, I deepened my understanding of Windows services, file manipulation, and parameterized scripts. The journey helped me enhance my PowerShell skills and build practical solutions to real-world challenges.
   </p>
 </section>
-    <section id="my-projects">
-      <h2>My Projects</h2>
-      <p>
-        In addition to coursework, I've embarked on some exciting PowerShell projects to further enhance my skills. These projects showcase my creativity and ability to develop automation solutions using PowerShell.
-      </p>
-      {/* Add details about each project */}
-    </section>
+
     <section id="contact">
       <h2>Contact Me</h2>
       <p>
-        If you're interested in connecting, collaborating, or learning more about my PowerShell journey, feel free to get in touch!
+        If you're interested in connecting, collaborating, or learning more about my PowerShell journey, feel free to get in touch! www.linkedin.com/in/connor-simons
       </p>
       {/* Add contact information */}
     </section>
