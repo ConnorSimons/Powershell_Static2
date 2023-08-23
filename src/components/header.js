@@ -23,8 +23,8 @@ const Header = ({ siteTitle }) => (
     </Link>
     <StaticImage
       alt="Connor Simons"
-      width={100}
-      height={100}
+      width={200}
+      height={200}
       style={{ margin: 0 }}
       src="../images/gatsby-icon.png"
   />
