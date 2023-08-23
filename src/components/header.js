@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -21,7 +22,7 @@ const Header = ({ siteTitle }) => (
       {siteTitle}
     </Link>
     <StaticImage
-      alt="Gatsby logo"
+      alt="Connor Simons"
       height={20}
       style={{ margin: 0 }}
       src="../images/gatsby-icon.png"
