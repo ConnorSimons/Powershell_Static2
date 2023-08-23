@@ -8,8 +8,14 @@ const IndexPage = () => (
   <Layout>
     <section id="home">
       <header>
-        <h1>My PowerShell Learning Journey</h1>
+        <h1>My PowerShell Journey</h1>
       </header>
+    </section>
+   <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hello, I am Connor Simons. When I'm not diving into the world of PowerShell, you'll often find me immersed in the world of games, both on-screen and with my trusty RC cars. I also have a deep appreciation for the great outdoors, and you can often catch me exploring the breathtaking landscapes of the Pacific Northwest through hiking.
+      </p>
     </section>
     <section id="learning-method">
       <h2>My Learning Method</h2>
