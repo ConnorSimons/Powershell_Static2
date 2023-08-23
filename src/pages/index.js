@@ -78,7 +78,7 @@ const IndexPage = () => (
     </div>
     <div class="code-text">
       <p>Script to Export Services to Files:</p>
-      <pre><code>{/* Place your PowerShell script here */}</code></pre>
+{/*<pre><code> Place your PowerShell script here </code></pre>*/}
     </div>
   </div>
 
@@ -91,7 +91,7 @@ const IndexPage = () => (
     </div>
     <div class="code-text">
       <p>Script to Check Old Spool Files and Restart Print Spooler:</p>
-      <pre><code>{/* Place your PowerShell script here */}</code></pre>
+{/*<pre><code> Place your PowerShell script here </code></pre>*/}
     </div>
   </div>
   <p>
