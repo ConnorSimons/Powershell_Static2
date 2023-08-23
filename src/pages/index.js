@@ -73,7 +73,7 @@ const IndexPage = () => (
       <StaticImage
         src="../images/code-export-services.png"
         alt="Exporting Services to Files"
-        placeholder="blurred"
+        
       />
     </div>
     <div class="code-text">
@@ -87,7 +87,6 @@ const IndexPage = () => (
       <StaticImage
         src="../images/code-restart-spooler.png"
         alt="Checking Old Spool Files and Restarting Print Spooler"
-        placeholder="blurred"
       />
     </div>
     <div class="code-text">
